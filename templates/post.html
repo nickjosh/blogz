@@ -4,6 +4,10 @@
 
 <h2 class="post-title">{{ post.title }}</h2>
 <p class="post-body">{{ post.body }}</p>
+<a href="/blog" class="post-author"
+    written by {{ post.username}} </a>
+<p class="post-author">
+        written by {{ post.author.username}} </p>
 <!-- TODO add author w/ link to author's blog -->
 <p class="post-author">
     written on {{ post.created.strftime('%Y-%m-%d') }}
